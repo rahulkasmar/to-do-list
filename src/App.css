@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  text-decoration: solid;
 }
 
 .App-logo {
@@ -21,12 +22,96 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  text-decoration: line-through;
   color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #61dafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 400px;
+  padding: 20px;
+}
+
+.addTask {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.addTask input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.addTask button {
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.addTask button:hover {
+  background-color: #218838;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.list h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.list button {
+  padding: 5px 10px;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.list button:hover {
+  background-color: #c82333;
+}
+
 
 @keyframes App-logo-spin {
   from {
